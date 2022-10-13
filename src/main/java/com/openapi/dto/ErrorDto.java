@@ -20,16 +20,16 @@ import javax.annotation.Generated;
  */
 
 @JsonTypeName("Error")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2022-10-12T20:48:07.166196+02:00[Europe/Madrid]")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2022-10-13T16:02:15.744067+02:00[Europe/Madrid]")
 public class ErrorDto {
 
   @JsonProperty("code")
-  private Integer code;
+  private Long code;
 
   @JsonProperty("message")
   private String message;
 
-  public ErrorDto code(Integer code) {
+  public ErrorDto code(Long code) {
     this.code = code;
     return this;
   }
@@ -40,11 +40,11 @@ public class ErrorDto {
   */
   
   @Schema(name = "code", required = false)
-  public Integer getCode() {
+  public Long getCode() {
     return code;
   }
 
-  public void setCode(Integer code) {
+  public void setCode(Long code) {
     this.code = code;
   }
 
